@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>FORM</title>
 </head>
 <body>
-silakan isi disini
-
+	<h1><center>FORM</center> </h1>
+	<hr>
+	<form action="proses.php" method="POST" enctype="multipart/form-data">
+		<p>Hobby : <input type="checkbox" name="hobby[]" value="membaca">Membaca
+			<input type="checkbox" name="hobby[]" value="menonton">menonton
+			<input type="checkbox" name="hobby[]" value="memancing">memancing
+			<input type="checkbox" name="hobby[]" value="menyanyi">menyanyi<br></p>
+		<p>Gambar : <input type="file" name="gambar"></p>
+		<input type="submit" name="submit" value="Upload">
+	</form>
+	<hr>
 </body>
 </html>
